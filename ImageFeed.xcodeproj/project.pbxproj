@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2019E7DC2BA9DCF400AE9DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */; };
 		2019E7DE2BA9DCF400AE9DDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */; };
-		2019E7E02BA9DCF400AE9DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019E7DF2BA9DCF400AE9DDF /* ViewController.swift */; };
 		2019E7E32BA9DCF400AE9DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E12BA9DCF400AE9DDF /* Main.storyboard */; };
 		2019E7E52BA9DCF500AE9DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */; };
 		2019E7E82BA9DCF500AE9DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E62BA9DCF500AE9DDF /* LaunchScreen.storyboard */; };
+		20D792CA2BD70C330065F5DD /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D792C92BD70C330065F5DD /* ImagesListCell.swift */; };
+		20D792CC2BD70C3B0065F5DD /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D792CB2BD70C3B0065F5DD /* ImageListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2019E7D82BA9DCF400AE9DDF /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2019E7DF2BA9DCF400AE9DDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2019E7E22BA9DCF400AE9DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2019E7E72BA9DCF500AE9DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2019E7E92BA9DCF500AE9DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D792C92BD70C330065F5DD /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagesListCell.swift; path = ../ImagesListCell.swift; sourceTree = "<group>"; };
+		20D792CB2BD70C3B0065F5DD /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageListViewController.swift; path = ImageFeed/ImageListViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,22 @@
 			children = (
 				2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */,
 				2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */,
-				2019E7DF2BA9DCF400AE9DDF /* ViewController.swift */,
+				2019E7F12BA9F69C00AE9DDF /* ImageList */,
 				2019E7E12BA9DCF400AE9DDF /* Main.storyboard */,
 				2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */,
 				2019E7E62BA9DCF500AE9DDF /* LaunchScreen.storyboard */,
 				2019E7E92BA9DCF500AE9DDF /* Info.plist */,
 			);
 			path = ImageFeed;
+			sourceTree = "<group>";
+		};
+		2019E7F12BA9F69C00AE9DDF /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				20D792CB2BD70C3B0065F5DD /* ImageListViewController.swift */,
+				20D792C92BD70C330065F5DD /* ImagesListCell.swift */,
+			);
+			path = ImageList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2019E7E02BA9DCF400AE9DDF /* ViewController.swift in Sources */,
+				20D792CC2BD70C3B0065F5DD /* ImageListViewController.swift in Sources */,
+				20D792CA2BD70C330065F5DD /* ImagesListCell.swift in Sources */,
 				2019E7DC2BA9DCF400AE9DDF /* AppDelegate.swift in Sources */,
 				2019E7DE2BA9DCF400AE9DDF /* SceneDelegate.swift in Sources */,
 			);
@@ -300,6 +312,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +320,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.shattIos.ImageFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +351,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.shattIos.ImageFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
