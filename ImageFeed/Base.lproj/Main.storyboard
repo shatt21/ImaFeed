@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="QZo-pz-OuO" userLabel="Cell Image">
-                                                    <rect key="frame" x="20" y="11" width="353" height="178"/>
+                                                    <rect key="frame" x="16" y="4" width="361" height="192"/>
                                                     <color key="backgroundColor" name="YP Backgrond"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -39,7 +39,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL6-42-TfL" userLabel="Like Button">
-                                                    <rect key="frame" x="329" y="11" width="44" height="44"/>
+                                                    <rect key="frame" x="333" y="4" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="ptv-oI-dA8"/>
                                                         <constraint firstAttribute="width" constant="44" id="q4j-Qb-dVW"/>
@@ -48,7 +48,7 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="like_button_on" title=""/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-8q-efx" userLabel="Date Label">
-                                                    <rect key="frame" x="28.000000000000007" y="165.33333333333334" width="101.66666666666669" height="15.666666666666657"/>
+                                                    <rect key="frame" x="20" y="176.33333333333334" width="369" height="15.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -56,15 +56,15 @@
                                             </subviews>
                                             <color key="backgroundColor" name="YP Backgrond"/>
                                             <constraints>
-                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="top" secondItem="NS9-ok-jno" secondAttribute="topMargin" id="2sW-Xz-OTY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="QZo-pz-OuO" secondAttribute="bottom" id="3t9-PM-7O2"/>
+                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="top" secondItem="NS9-ok-jno" secondAttribute="top" constant="4" id="2sW-Xz-OTY"/>
+                                                <constraint firstAttribute="bottom" secondItem="QZo-pz-OuO" secondAttribute="bottom" constant="4" id="3t9-PM-7O2"/>
                                                 <constraint firstItem="sL6-42-TfL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NS9-ok-jno" secondAttribute="leading" constant="20" symbolic="YES" id="5yh-3q-7OU"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZHd-8q-efx" secondAttribute="trailing" constant="8" id="CXh-ME-GsP"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="QZo-pz-OuO" secondAttribute="trailing" id="F6i-ib-9ou"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZHd-8q-efx" secondAttribute="trailing" constant="4" id="CXh-ME-GsP"/>
+                                                <constraint firstAttribute="trailing" secondItem="QZo-pz-OuO" secondAttribute="trailing" constant="16" id="F6i-ib-9ou"/>
                                                 <constraint firstItem="sL6-42-TfL" firstAttribute="top" secondItem="QZo-pz-OuO" secondAttribute="top" id="Gyx-AE-BFE"/>
-                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="leading" secondItem="NS9-ok-jno" secondAttribute="leadingMargin" id="KCh-Mb-25H"/>
-                                                <constraint firstItem="ZHd-8q-efx" firstAttribute="leading" secondItem="QZo-pz-OuO" secondAttribute="leading" constant="8" id="P8x-q6-80x"/>
-                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="bottom" secondItem="ZHd-8q-efx" secondAttribute="bottom" constant="8" id="Sbi-1W-EdP"/>
+                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="leading" secondItem="NS9-ok-jno" secondAttribute="leading" constant="16" id="KCh-Mb-25H"/>
+                                                <constraint firstItem="ZHd-8q-efx" firstAttribute="leading" secondItem="QZo-pz-OuO" secondAttribute="leading" constant="4" id="P8x-q6-80x"/>
+                                                <constraint firstItem="QZo-pz-OuO" firstAttribute="bottom" secondItem="ZHd-8q-efx" secondAttribute="bottom" constant="4" id="Sbi-1W-EdP"/>
                                                 <constraint firstItem="QZo-pz-OuO" firstAttribute="trailing" secondItem="sL6-42-TfL" secondAttribute="trailing" id="mpb-te-7Qf"/>
                                             </constraints>
                                         </tableViewCellContentView>
