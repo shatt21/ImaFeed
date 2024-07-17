@@ -2,12 +2,20 @@
 import UIKit
     
 class SingleImageViewController: UIViewController {
+    var image: UIImage? {
+        didSet {
+            guard isViewLoaded else {return}
+            imageView.image = image
+        }
+    }
     
-    @IBOutlet weak var imageView: UIImageView!
-}
-
-extension SingleImageViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowSingleImage", sender: indexPath)
+    @IBOutlet private var imageView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imageView.image = image
     }
 }
+
+
