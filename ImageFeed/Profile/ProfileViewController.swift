@@ -67,16 +67,6 @@ class ProfileViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
 
     }
-    
-//    func nameLabel() {
-//        let loginNameLabel = UILabel()
-//        loginNameLabel.text = "Name"
-//        loginNameLabel.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(loginNameLabel)
-//        loginNameLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
-//        loginNameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
-//        self.loginNameLabel = loginNameLabel
-//    }
 
 }
 
