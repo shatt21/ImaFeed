@@ -2,15 +2,9 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    @IBOutlet private var avatarImageView: UIImageView!
-    @IBOutlet private var nameLabel: UIView!
-    @IBOutlet private var loginNameLabel: UILabel!
-    @IBOutlet private var descriptionLabel: UILabel!
-    @IBOutlet private var logoutButton: UIButton!
     
     @IBAction func didTapLogoutButton(_ sender: Any) {
-        loginNameLabel?.removeFromSuperview()
-        loginNameLabel = nil
+
     }
     
     override func viewDidLoad() {
@@ -31,16 +25,16 @@ class ProfileViewController: UIViewController {
         
         let nameLabel = UILabel()
         nameLabel.text = "Екатерина Новикова"
-        nameLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 23)
+        nameLabel.font = UIFont.systemFont(ofSize: 23, weight: .bold)
         nameLabel.textColor = .white
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(nameLabel)
         nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8).isActive = true
-        self.nameLabel = nameLabel
         
         let loginLabel = UILabel()
         loginLabel.text = "@ekaterina_nov"
+        loginLabel.font = .systemFont(ofSize: 13)
         loginLabel.textColor = .gray
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginLabel)
@@ -49,6 +43,7 @@ class ProfileViewController: UIViewController {
         
         let descriptionLabel = UILabel()
         descriptionLabel.text = "Hello world!"
+        descriptionLabel.font = .systemFont(ofSize: 13)
         descriptionLabel.textColor = .white
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(descriptionLabel)
@@ -67,16 +62,6 @@ class ProfileViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
 
     }
-    
-//    func nameLabel() {
-//        let loginNameLabel = UILabel()
-//        loginNameLabel.text = "Name"
-//        loginNameLabel.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(loginNameLabel)
-//        loginNameLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
-//        loginNameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
-//        self.loginNameLabel = loginNameLabel
-//    }
 
 }
 
