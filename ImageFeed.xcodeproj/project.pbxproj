@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200B40842C4659B500EBAB72 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B40832C4659B500EBAB72 /* SingleImageViewController.swift */; };
 		2019E7DC2BA9DCF400AE9DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */; };
 		2019E7DE2BA9DCF400AE9DDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */; };
 		2019E7E32BA9DCF400AE9DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E12BA9DCF400AE9DDF /* Main.storyboard */; };
 		2019E7E52BA9DCF500AE9DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */; };
 		2019E7E82BA9DCF500AE9DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2019E7E62BA9DCF500AE9DDF /* LaunchScreen.storyboard */; };
+		204901C62C443EBF00F7A694 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204901C52C443EBF00F7A694 /* ProfileViewController.swift */; };
 		20D792CA2BD70C330065F5DD /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D792C92BD70C330065F5DD /* ImagesListCell.swift */; };
 		20D792CC2BD70C3B0065F5DD /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D792CB2BD70C3B0065F5DD /* ImageListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200B40832C4659B500EBAB72 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		2019E7D82BA9DCF400AE9DDF /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2019E7E72BA9DCF500AE9DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2019E7E92BA9DCF500AE9DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204901C52C443EBF00F7A694 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		20D792C92BD70C330065F5DD /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagesListCell.swift; path = ../ImagesListCell.swift; sourceTree = "<group>"; };
 		20D792CB2BD70C3B0065F5DD /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageListViewController.swift; path = ImageFeed/ImageListViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200B40852C465DEA00EBAB72 /* SingleImage */ = {
+			isa = PBXGroup;
+			children = (
+				200B40832C4659B500EBAB72 /* SingleImageViewController.swift */,
+			);
+			path = SingleImage;
+			sourceTree = "<group>";
+		};
+		200B40862C465DEE00EBAB72 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				204901C52C443EBF00F7A694 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		2019E7CF2BA9DCF400AE9DDF = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +81,8 @@
 				2019E7DB2BA9DCF400AE9DDF /* AppDelegate.swift */,
 				2019E7DD2BA9DCF400AE9DDF /* SceneDelegate.swift */,
 				2019E7F12BA9F69C00AE9DDF /* ImageList */,
+				200B40862C465DEE00EBAB72 /* Profile */,
+				200B40852C465DEA00EBAB72 /* SingleImage */,
 				2019E7E12BA9DCF400AE9DDF /* Main.storyboard */,
 				2019E7E42BA9DCF500AE9DDF /* Assets.xcassets */,
 				2019E7E62BA9DCF500AE9DDF /* LaunchScreen.storyboard */,
@@ -151,7 +173,9 @@
 			files = (
 				20D792CC2BD70C3B0065F5DD /* ImageListViewController.swift in Sources */,
 				20D792CA2BD70C330065F5DD /* ImagesListCell.swift in Sources */,
+				204901C62C443EBF00F7A694 /* ProfileViewController.swift in Sources */,
 				2019E7DC2BA9DCF400AE9DDF /* AppDelegate.swift in Sources */,
+				200B40842C4659B500EBAB72 /* SingleImageViewController.swift in Sources */,
 				2019E7DE2BA9DCF400AE9DDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
